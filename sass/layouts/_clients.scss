@@ -1,0 +1,52 @@
+/*Одинадцятий паршал*/
+
+/*Постоянные клиенты*/
+.client {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 32px;
+        line-height: 1.16;
+    }
+}
+
+.client__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+
+.client__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: var(--anim);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+
+    &:hover .client__icons,
+    &:focus .client__icons {
+        fill: var(--accent-color);
+    }
+}
+
+.client__icons {
+    fill: #AFB1B8;
+}
