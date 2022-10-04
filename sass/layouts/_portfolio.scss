@@ -16,7 +16,8 @@
     }
 }
 
-.portfolio__nav {
+.buttons {
+    gap: 15px 8px;
     margin-bottom: 40px;
 
     @media screen and (min-width: 768px) {
@@ -29,7 +30,7 @@
     }
 }
 
-.portfolio__success {
+.c-button {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -42,8 +43,7 @@
     border: transparent;
     text-decoration: none;
     padding: 6px 22px;
-    margin-left: 8px;
-    margin-bottom: 15px;
+    
     transition: var(--anim);
 
     &:hover,

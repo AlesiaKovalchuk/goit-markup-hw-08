@@ -108,6 +108,9 @@
 .item {
     margin-bottom: 9px;
 }
+.item:last-child {
+    margin-bottom: 0px;
+}
 
 .logo__footer {
     color: var(--additional-color);
