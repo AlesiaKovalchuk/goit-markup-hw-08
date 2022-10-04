@@ -4,6 +4,7 @@
 
 header {
     border-bottom: 1px solid #ececec;
+    
 
     &__page {
         background-color: var(--additional-color);
@@ -19,7 +20,7 @@ header {
 .header__nav {
     display: flex;
     align-items: center;
-
+    height: 60px;
     @media screen and (max-width: 767px) {
         width: 100%;
     }
@@ -33,7 +34,7 @@ header {
     line-height: 1.2;
     text-decoration: none;
     display: inline-block;
-    padding: 19px;
+    padding: 19px 0;
 
     @media screen and (min-width: 768px) {
         padding: 0;
