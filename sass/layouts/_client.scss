@@ -26,7 +26,7 @@
 
 .client__link {
     display: flex;
-    width: 170px;
+    @include display-centered(center, center);
     height: 92px;
     align-items: center;
     justify-content: center;

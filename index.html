@@ -146,20 +146,23 @@
             <label for="comment">Коментар</label>
             <textarea id="comment" name="comment" rows="10" placeholder="Введите текст"></textarea>
           </div>
-          <label class="form-checkbox">
-            <input class="visually-hidden form-checkbox-input" type="checkbox" name="user-agreement" checked />
-            <span class="form-checkbox-custom-checkbox">
-              <svg class="form-checkbox-icon" width="16" height="15">
-                <use href="./img/icons.svg#icon-icon-check-1"></use>
-              </svg>
+          <!-- Checkbox -->
+          
+          
+          <label class="check-label">
+            <input class="check-input" type="checkbox" name="checkbox">
+          
+            <span class="icon-check"></span>
+            <span class="check-text">Погоджуюся з розсилкою та приймаю
+              <a class="form-link" href="">Умови договору</a>
             </span>
-            <span class="form-agreement">Погоджуюся з розсилкою та приймаю
-              <a class="checkbox-link" target="_blank" rel="noopener noreferrer" href="">Умови договору</a></span>
           </label>
+          
           <button class="modal-btn" type="submit" disabled>Відправити</button>
         </form>
       </div>
     </div>
+
 
     <!-- Секція особливості  -->
     <section class="section">
@@ -272,6 +275,7 @@
                 type="image/jpg" />
               <img class="team__img" src="./img/team/1-sm.jpg" alt="Игорь Демьяненко" width="450" height="460" />
             </picture>
+            <div class="team__description">
             <h3 class="team__name">Ігор Дем'яненко</h3>
             <p class="team__job" lang="en">Product Designer</p>
             <ul class="command__icons">
@@ -296,6 +300,7 @@
                   </svg></a>
               </li>
             </ul>
+            </div>
           </li>
           <li class="team__list">
             <picture>
@@ -307,6 +312,7 @@
                 type="image/jpg" />
               <img class="team__img" src="./img/team/2-sm.jpg" alt="Игорь Демьяненко" width="450" height="460" />
             </picture>
+            <div class="team__description">
             <h3 class="team__name">Ольга Рєпіна</h3>
             <p class="team__job" lang="en">Frontend Developer</p>
             <ul class="command__icons">
@@ -331,6 +337,7 @@
                   </svg></a>
               </li>
             </ul>
+            </div>
           </li>
           <li class="team__list">
             <picture>
@@ -342,6 +349,7 @@
                 type="image/jpg" />
               <img class="team__img" src="./img/team/3-sm.jpg" alt="Игорь Демьяненко" width="450" height="460" />
             </picture>
+            <div class="team__description">
             <h3 class="team__name">Микола Тарасов</h3>
             <p class="team__job" lang="en">Marketing</p>
             <ul class="command__icons">
@@ -366,6 +374,7 @@
                   </svg></a>
               </li>
             </ul>
+            </div>
           </li>
           <li class="team__list">
             <picture>
@@ -377,6 +386,7 @@
                 type="image/jpg" />
               <img class="team__img" src="./img/team/4-sm.jpg" alt="Игорь Демьяненко" width="450" height="460" />
             </picture>
+            <div class="team__description">
             <h3 class="team__name">Михайло Єрмаков</h3>
             <p class="team__job" lang="en">UI Designer</p>
             <ul class="command__icons">
@@ -401,6 +411,7 @@
                   </svg></a>
               </li>
             </ul>
+            </div>
           </li>
         </ul>
       </div>

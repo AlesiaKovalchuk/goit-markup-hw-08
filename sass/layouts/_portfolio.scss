@@ -44,7 +44,7 @@
     text-decoration: none;
     padding: 6px 22px;
     
-    transition: var(--anim);
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
