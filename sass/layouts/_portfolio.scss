@@ -1,6 +1,16 @@
 /* Дванадцятий паршал*/
 
 /* Наші роботи, portfolio */
+.section {
+    &__list {
+
+        display: flex;
+        gap: 30px;
+    }
+}
+.section {
+    justify-content: center;
+}
 
 .portfolio {
     @extend %section;
