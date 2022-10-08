@@ -1,6 +1,20 @@
 /*Одинадцятий паршал*/
 
 /*Постоянные клиенты*/
+.clients {
+    @include section(60px, 60px, var(--primary-text-color));
+
+    @media screen and (min-width: 1200px) {
+        @include section(94px, 94px, var(--primary-text-color));
+    }
+}
+
+.clients__container {
+    @media screen and (min-width: 1200px) {
+        width: 1170px;
+        height: 184px;
+    }
+}
 .client {
     color: var(--title-text-color);
     font-weight: 700;
@@ -18,9 +32,15 @@
 
 .client__list {
     display: flex;
-    flex-wrap: wrap;
     gap: 30px;
-    list-style: none;
+}
+.client__list {
+    @include list(flex, 30px, row, wrap);
+
+    @media screen and (min-width: 1200px) {
+        @include list(flex, 30px, row, null);
+        text-align: center;
+    }
 }
 
 
