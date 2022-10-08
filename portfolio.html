@@ -2,398 +2,443 @@
 <html lang="uk">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./css/main.min.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
-  <!-- Секція хедер -->
-  <header class="header__page">
-    <div class="container header__main">
-      <nav class="header__nav">
-        <a href="./index.html" class="logo">
-          Web<span class="header__logo">Studio</span></a>
-
-        <!--Мобільне меню-->
-        <button class="mobile-menu-btn js-open-menu" type="button" data-menu-button>
-          <svg class="mobile-menu-icon" width="40" height="40">
-            <use class="mobile-menu-burger" href="./img/icons.svg#icon-menu"></use>
-            <use class="mobile-menu-close" href="./img/icons.svg#icon-close_menu"></use>
-          </svg>
-        </button>
-        <div class="mobile-menu js-menu-container" data-menu>
-          <ul class="mobile-menu-nav list">
-            <li class="mobile-menu-nav-item">
-              <a href="index.html" class="link open studio" href="">Студія</a>
-            </li>
-            <li class="mobile-menu-nav-item">
-              <a href="portfolio.html" class="link open" href="">Портфоліо</a>
-            </li>
-            <li class="mobile-menu-nav-item">
-              <a class="link open" href="">Контакти</a>
-            </li>
-          </ul>
-
-          <ul class="mobile-menu-contacts list">
-            <li class="mobile-menu-contacts-item">
-              <a class="link accent" href=""> +38 096 111 11 11 </a>
-            </li>
-            <li class="mobile-menu-contacts-item">
-              <a class="link" href="">info@devstudio.com</a>
-            </li>
-          </ul>
-
-          <ul class="mobile-menu-socials list">
-            <li class="mobile-menu-socials-item">
-              <a class="mobile-menu-socials-link link" href=""> Instagram </a>
-            </li>
-            <li class="mobile-menu-socials-item">
-              <a class="mobile-menu-socials-link link" href="">Twitter</a>
-            </li>
-            <li class="mobile-menu-socials-item">
-              <a class="mobile-menu-socials-link link" href="">Facebook</a>
-            </li>
-            <li class="mobile-menu-socials-item">
-              <a class="mobile-menu-socials-link link" href="">LinkedIn</a>
-            </li>
-          </ul>
-        </div>
-
-        <ul class="header__list">
-          <li class="header__list-item">
-            <a href="./index.html" class="header__list-link link">Студія</a>
+  <header class="container">
+    <a href="./index.html" class="nav__logo">Web<span class="nav__logo-word">Studio</span></a>
+    <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu"
+      data-menu-button>
+      <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+        <use class="nav__icon-menu" href="./images/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <div class="nav__menu backdrop-menu js-menu-container" id="mobile-menu" data-menu>
+      <button type="button" class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="nav__menu"
+        data-menu-button>
+        <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+          <use class="nav__icon-close" href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="navigation">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link">Студія</a>
           </li>
-          <li class="header__list-item">
-            <a href="./portfolio.html" class="header__list-link link current">Портфоліо</a>
+          <li class="nav__item">
+            <a href="./portfolio.html" class="nav__link current">Портфоліо</a>
           </li>
-          <li class="header__list-item">
-            <a href="#" class="header__list-link link">Контакти</a>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Контакти</a>
           </li>
         </ul>
-      </nav>
-      <ul class="auht__nav">
-        <li class="head">
-          <a href="info@devstudio.com" class="auht__nav-link link"><svg class="head__icons mail" width="16" height="12">
-              <use href="./img/icons.svg#icon-email"></use>
-            </svg>info@devstudio.com</a>
-        </li>
-        <li class="head">
-          <a href="tel:+380961111111" class="auht__nav-link link"><svg class="head__icons tel" width="10" height="16">
-              <use href="./img/icons.svg#icon-tel"></use>
-            </svg>+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
+      <div class="contacts">
+        <ul class="nav-contacts">
+          <li class="nav-contacts__list">
+            <a href="mailto:info@devstudio.com" class="nav-contacts__link" aria-label="Написать письмо">
+              <svg class="nav-contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="nav-contacts__list">
+            <a href="tel:+380961111111" class="nav-contacts__link" aria-label="Позвонить">
+              <svg class="nav-contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+        <ul class="modal-links__list">
+          <li class="modal-links__item">
+            <a href="#" class="modal-links__link">Instagram</a>
+          </li>
+          <li class="modal-links__item">
+            <a href="#" class="modal-links__link">Twitter</a>
+          </li>
+          <li class="modal-links__item">
+            <a href="#" class="modal-links__link">Facebook</a>
+          </li>
+          <li class="modal-links__item">
+            <a href="#" class="modal-links__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
-
-  <!-- Секція Наші роботи -->
   <main>
-    <section class="portfolio">
+    <section class="portfolio section">
       <div class="container">
-        <h1 class="visually-hidden">Портфоліо</h1>
-        <ul class="buttons">
-          <li><button class="c-button" type="button">Усі</button></li>
-          <li><button class="c-button" type="button">Веб- сайти</button></li>
-          <li><button class="c-button" type="button">Додатки</button></li>
-          <li><button class="c-button" type="button">Дизайн</button></li>
-          <li><button class="c-button" type="button">Маркетинг</button></li>
+        <h1 class="visually-hidden">Фильтры</h1>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <button type="button" class="portfolio__buttons">Все</button>
+          </li>
+          <li class="portfolio__item">
+            <button type="button" class="portfolio__buttons">Веб-сайти</button>
+          </li>
+          <li class="portfolio__item">
+            <button type="button" class="portfolio__buttons">Додатки</button>
+          </li>
+          <li class="portfolio__item">
+            <button type="button" class="portfolio__buttons">Дизайн</button>
+          </li>
+          <li class="portfolio__item">
+            <button type="button" class="portfolio__buttons">Маркетинг</button>
+          </li>
         </ul>
-        <ul class="card">
-          <li class="card__list">
-            <a class="card__box card__box--grow" href="">
+        <h2 class="visually-hidden">Проэкты</h2>
+        <ul class="portfolio__menu">
+          <li class="portfolio__images">
+            <div class="portfolio__overlay">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team@1.webp 1x,
+                                    ./images/team@2.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)" srcset="./images/team@1tab.webp 1x,
+                                    ./images/team@2tab.webp 2x" type="image/webp" />
+                <source media="(max-width: 767px)" srcset="./images/team@1mob.webp 1x, 
+                                    ./images/team@2mob.webp 2x" type="image/webp" />
+
+
+                <source media="(min-width: 1200px)" srcset="./images/team@1.jpg 1x,
+                                    ./images/team@2.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/team@1tab.jpg 1x,
+                                    ./images/team@2tab.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/team@1mob.jpg 1x, 
+                                    ./images/team@2mob.jpg 2x" />
+                <img src="./images/team.jpg" class="portfolio__img" alt="Наша команда">
+              </picture>
               <div class="overlay">
-                <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./img/portfolio/1-lg.jpg 1x, ./img/portfolio/1-lg@2x.jpg 2x" type="image/jpg" />
-                  <source media="(min-width: 768px)"
-                    srcset="./img/portfolio/1-md.jpg 1x, ./img/portfolio/1-md@2x.jpg 2x" type="image/jpg" />
-                  <source media="(max-width: 767px)"
-                    srcset="./img/portfolio/1-sm.jpg 1x, ./img/portfolio/1-sm@2x.jpg 2x" type="image/jpg" />
-                  <img src="./img/portfolio/1-sm.jpg" alt="Веб-сайт" width="450" height="294" />
-                </picture>
-                <p class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
-                  дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                <p class="overlay__paragraph">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="skills skills--grow">
-                <h2 class="skills__card">Технокряк</h2>
-                <p class="skills__group">Веб-сайт</p>
-              </div>
-            </a>
+            </div>
+            <div class="portfolio__box">
+              <h3 class="portfolio-box__name">Технокряк</h3>
+              <p class="portfolio-box__paragraph">Веб-сайт</p>
+            </div>
           </li>
-          <li class="card__list">
-            <a class="card__box" href="">
+          <li class="portfolio__images">
+            <div class="portfolio__overlay">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/basketball@1.webp 1x,
+                                    ./images/basketball@2.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)" srcset="./images/basketball@1tab.webp 1x,
+                                    ./images/basketball@2tab.webp 2x" type="image/webp" />
+                <source media="(max-width: 767px)" srcset="./images/basketball@1mob.webp 1x, 
+                                    ./images/basketball@2mob.webp 2x" type="image/webp" />
+
+                <source media="(min-width: 1200px)" srcset="./images/basketball@1.jpg 1x,
+                                    ./images/basketball@2.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/basketball@1tab.jpg 1x,
+                                    ./images/basketball@2tab.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/basketball@1mob.jpg 1x, 
+                                    ./images/basketball@2mob.jpg 2x" />
+                <img src="./images/basketball.jpg" class="portfolio__img" alt="Баскетбол">
+              </picture>
               <div class="overlay">
-                <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./img/portfolio/2-lg.jpg 1x, ./img/portfolio/2-lg@2x.jpg 2x" type="image/jpg" />
-                  <source media="(min-width: 768px)"
-                    srcset="./img/portfolio/2-md.jpg 1x, ./img/portfolio/2-md@2x.jpg 2x" type="image/jpg" />
-                  <source media="(max-width: 767px)"
-                    srcset="./img/portfolio/2-sm.jpg 1x, ./img/portfolio/2-sm@2x.jpg 2x" type="image/jpg" />
-                  <img src="./img/portfolio/2-sm.jpg" alt="Веб-сайт" width="450" height="294" />
-                </picture>
-                <p class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
-                  дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                <p class="overlay__paragraph">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="skills">
-                <h2 class="skills__card">
-                  Постер <span lang="en">New Orlean vs Golden Star</span>
-                </h2>
-                <p class="skills__group">Дизайн</p>
-              </div>
-            </a>
+            </div>
+            <div class="portfolio__box">
+              <h3 class="portfolio-box__name">Постер New Orlean vs Golden Star</h3>
+              <p class="portfolio-box__paragraph">Дизайн</p>
+            </div>
           </li>
-          <li class="card__list">
-            <a class="card__box" href="">
+          <li class="portfolio__images">
+            <div class="portfolio__overlay">
+              <picture>
+
+                <source media="(min-width: 1200px)" srcset="./images/restaraunt@1.webp 1x,
+                                    ./images/restaraunt@2.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)" srcset="./images/restaraunt@1tab.webp 1x,
+                                    ./images/restaraunt@2tab.webp 2x" type="image/webp" />
+                <source media="(max-width: 767px)" srcset="./images/restaraunt@1mob.webp 1x, 
+                                    ./images/restaraunt@2mob.webp 2x" type="image/webp" />
+
+
+                <source media="(min-width: 1200px)" srcset="./images/restaraunt@1.jpg 1x,
+                                    ./images/restaraunt@2.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/restaraunt@1tab.jpg 1x,
+                                    ./images/restaraunt@2tab.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/restaraunt@1mob.jpg 1x, 
+                                    ./images/restaraunt@2mob.jpg 2x" />
+                <img src="./images/restaraunt.jpg" class="portfolio__img" alt="Рыбный ресторан">
+              </picture>
               <div class="overlay">
-                <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./img/portfolio/3-lg.jpg 1x, ./img/portfolio/3-lg@2x.jpg 2x" type="image/jpg" />
-                  <source media="(min-width: 768px)"
-                    srcset="./img/portfolio/3-md.jpg 1x, ./img/portfolio/3-md@2x.jpg 2x" type="image/jpg" />
-                  <source media="(max-width: 767px)"
-                    srcset="./img/portfolio/3-sm.jpg 1x, ./img/portfolio/3-sm@2x.jpg 2x" type="image/jpg" />
-                  <img src="./img/portfolio/3-sm.jpg" alt="Веб-сайт" width="450" height="294" />
-                </picture>
-                <p class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
-                  дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                <p class="overlay__paragraph">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="skills">
-                <h2 class="skills__card">
-                  Ресторан <span lang="en">Seafood</span>
-                </h2>
-                <p class="skills__group">Додаток</p>
-              </div>
-            </a>
+            </div>
+            <div class="portfolio__box">
+              <h3 class="portfolio-box__name">Ресторан Seafood</h3>
+              <p class="portfolio-box__paragraph">Додаток</p>
+            </div>
           </li>
-          <li class="card__list">
-            <a class="card__box" href="">
+          <li class="portfolio__images">
+            <div class="portfolio__overlay">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/prime@1.webp 1x,
+                                    ./images/prime@2.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)" srcset="./images/prime@1tab.webp 1x,
+                                    ./images/prime@2tab.webp 2x" type="image/webp" />
+                <source media="(max-width: 767px)" srcset="./images/prime@1mob.webp 1x, 
+                                    ./images/prime@2mob.webp 2x" type="image/webp" />
+
+                <source media="(min-width: 1200px)" srcset="./images/prime@1.jpg 1x,
+                                    ./images/prime@2.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/prime@1tab.jpg 1x,
+                                    ./images/prime@2tab.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/prime@1mob.jpg 1x, 
+                                    ./images/prime@2mob.jpg 2x" />
+                <img src="./images/prime.jpg" class="portfolio__img" alt="Проэкт Прайм">
+              </picture>
               <div class="overlay">
-                <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./img/portfolio/4-lg.jpg 1x, ./img/portfolio/4-lg@2x.jpg 2x" type="image/jpg" />
-                  <source media="(min-width: 768px)"
-                    srcset="./img/portfolio/4-md.jpg 1x, ./img/portfolio/4-md@2x.jpg 2x" type="image/jpg" />
-                  <source media="(max-width: 767px)"
-                    srcset="./img/portfolio/4-sm.jpg 1x, ./img/portfolio/4-sm@2x.jpg 2x" type="image/jpg" />
-                  <img src="./img/portfolio/4-sm.jpg" alt="Веб-сайт" width="450" height="294" />
-                </picture>
-                <p class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
-                  дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                <p class="overlay__paragraph">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="skills">
-                <h2 class="skills__card">
-                  Проєкт <span lang="en">Prime</span>
-                </h2>
-                <p class="skills__group">Маркетинг</p>
-              </div>
-            </a>
+            </div>
+            <div class="portfolio__box">
+              <h3 class="portfolio-box__name">Проект Prime</h3>
+              <p class="portfolio-box__paragraph">Маркетинг</p>
+            </div>
           </li>
-          <li class="card__list">
-            <a class="card__box" href="">
+          <li class="portfolio__images">
+            <div class="portfolio__overlay">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/boxes@1.webp 1x,
+                                    ./images/boxes@2.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)" srcset="./images/boxes@1tab.webp 1x,
+                                    ./images/boxes@2tab.webp 2x" type="image/webp" />
+                <source media="(max-width: 767px)" srcset="./images/boxes@1mob.webp 1x, 
+                                    ./images/boxes@2mob.webp 2x" type="image/webp" />
+
+
+                <source media="(min-width: 1200px)" srcset="./images/boxes@1.jpg 1x,
+                                    ./images/boxes@2.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/boxes@1tab.jpg 1x,
+                                    ./images/boxes@2tab.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/boxes@1mob.jpg 1x, 
+                                    ./images/boxes@2mob.jpg 2x" />
+                <img src="./images/boxes.jpg" class="portfolio__img" alt="Проэкт Коробки">
+              </picture>
               <div class="overlay">
-                <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./img/portfolio/5-lg.jpg 1x, ./img/portfolio/5-lg@2x.jpg 2x" type="image/jpg" />
-                  <source media="(min-width: 768px)"
-                    srcset="./img/portfolio/5-md.jpg 1x, ./img/portfolio/5-md@2x.jpg 2x" type="image/jpg" />
-                  <source media="(max-width: 767px)"
-                    srcset="./img/portfolio/5-sm.jpg 1x, ./img/portfolio/5-sm@2x.jpg 2x" type="image/jpg" />
-                  <img src="./img/portfolio/5-sm.jpg" alt="Веб-сайт" width="450" height="294" />
-                </picture>
-                <p class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
-                  дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                <p class="overlay__paragraph">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="skills">
-                <h2 class="skills__card">
-                  Проєкт <span lang="en">Boxes</span>
-                </h2>
-                <p class="skills__group">Додаток</p>
-              </div>
-            </a>
+            </div>
+            <div class="portfolio__box">
+              <h3 class="portfolio-box__name">Проект Boxes</h3>
+              <p class="portfolio-box__paragraph">Додаток</p>
+            </div>
           </li>
-          <li class="card__list">
-            <a class="card__box" href="">
+          <li class="portfolio__images">
+            <div class="portfolio__overlay">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/website@1.webp 1x,
+                                    ./images/website@2.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)" srcset="./images/website@1tab.webp 1x,
+                                    ./images/website@2tab.webp 2x" type="image/webp" />
+                <source media="(max-width: 767px)" srcset="./images/website@1mob.webp 1x, 
+                                    ./images/website@2mob.webp 2x" type="image/webp" />
+
+
+                <source media="(min-width: 1200px)" srcset="./images/website@1.jpg 1x,
+                                    ./images/website@2.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/website@1tab.jpg 1x,
+                                    ./images/website@2tab.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/website@1mob.jpg 1x, 
+                                    ./images/website@2mob.jpg 2x" />
+                <img src="./images/website.jpg" class="portfolio__img" alt="Веб-сайт">
+              </picture>
               <div class="overlay">
-                <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./img/portfolio/6-lg.jpg 1x, ./img/portfolio/6-lg@2x.jpg 2x" type="image/jpg" />
-                  <source media="(min-width: 768px)"
-                    srcset="./img/portfolio/6-md.jpg 1x, ./img/portfolio/6-md@2x.jpg 2x" type="image/jpg" />
-                  <source media="(max-width: 767px)"
-                    srcset="./img/portfolio/6-sm.jpg 1x, ./img/portfolio/6-sm@2x.jpg 2x" type="image/jpg" />
-                  <img src="./img/portfolio/6-sm.jpg" alt="Веб-сайт" width="450" height="294" />
-                </picture>
-                <p class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
-                  дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                <p class="overlay__paragraph">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="skills">
-                <h2 class="skills__card" lang="en">
-                  Inspiration has no Borders
-                </h2>
-                <p class="skills__group">Веб-сайт</p>
-              </div>
-            </a>
+            </div>
+            <div class="portfolio__box">
+              <h3 class="portfolio-box__name">Inspiration has no Borders</h3>
+              <p class="portfolio-box__paragraph">Веб-сайт</p>
+            </div>
           </li>
-          <li class="card__list">
-            <a class="card__box" href="">
+          <li class="portfolio__images">
+            <div class="portfolio__overlay">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/magazine@1.webp 1x,
+                                    ./images/magazine@2.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)" srcset="./images/magazine@1tab.webp 1x,
+                                    ./images/magazine@2tab.webp 2x" type="image/webp" />
+                <source media="(max-width: 767px)" srcset="./images/magazine@1mob.webp 1x, 
+                                    ./images/magazine@2mob.webp 2x" type="image/webp" />
+
+
+                <source media="(min-width: 1200px)" srcset="./images/magazine@1.jpg 1x,
+                                    ./images/magazine@2.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/magazine@1tab.jpg 1x,
+                                    ./images/magazine@2tab.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/magazine@1mob.jpg 1x, 
+                                    ./images/magazine@2mob.jpg 2x" />
+                <img src="./images/magazine.jpg" class="portfolio__img" alt="Журнал">
+              </picture>
               <div class="overlay">
-                <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./img/portfolio/7-lg.jpg 1x, ./img/portfolio/7-lg@2x.jpg 2x" type="image/jpg" />
-                  <source media="(min-width: 768px)"
-                    srcset="./img/portfolio/7-md.jpg 1x, ./img/portfolio/7-md@2x.jpg 2x" type="image/jpg" />
-                  <source media="(max-width: 767px)"
-                    srcset="./img/portfolio/7-sm.jpg 1x, ./img/portfolio/7-sm@2x.jpg 2x" type="image/jpg" />
-                  <img src="./img/portfolio/7-sm.jpg" alt="Веб-сайт" width="450" height="294" />
-                </picture>
-                <p class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
-                  дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                <p class="overlay__paragraph">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="skills">
-                <h2 class="skills__card">
-                  Видання <span lang="en">Limited Edition</span>
-                </h2>
-                <p class="skills__group">Дизайн</p>
-              </div>
-            </a>
+            </div>
+            <div class="portfolio__box">
+              <h3 class="portfolio-box__name">Видання Limited Edition</h3>
+              <p class="portfolio-box__paragraph">Дизайн</p>
+            </div>
           </li>
-          <li class="card__list">
-            <a class="card__box" href="">
+          <li class="portfolio__images">
+            <div class="portfolio__overlay">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/lab@1.webp 1x,
+                                    ./images/lab@2.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)" srcset="./images/lab@1tab.webp 1x,
+                                    ./images/lab@2tab.webp 2x" type="image/webp" />
+                <source media="(max-width: 767px)" srcset="./images/lab@1mob.webp 1x, 
+                                    ./images/lab@2mob.webp 2x" type="image/webp" />
+
+
+                <source media="(min-width: 1200px)" srcset="./images/lab@1.jpg 1x,
+                                    ./images/lab@2.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/lab@1tab.jpg 1x,
+                                    ./images/lab@2tab.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/lab@1mob.jpg 1x, 
+                                    ./images/lab@2mob.jpg 2x" />
+                <img src="./images/lab.jpg" class="portfolio__img" alt="Проэкт лаб">
+              </picture>
               <div class="overlay">
-                <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./img/portfolio/8-lg.jpg 1x, ./img/portfolio/8-lg@2x.jpg 2x" type="image/jpg" />
-                  <source media="(min-width: 768px)"
-                    srcset="./img/portfolio/8-md.jpg 1x, ./img/portfolio/8-md@2x.jpg 2x" type="image/jpg" />
-                  <source media="(max-width: 767px)"
-                    srcset="./img/portfolio/8-sm.jpg 1x, ./img/portfolio/8-sm@2x.jpg 2x" type="image/jpg" />
-                  <img src="./img/portfolio/8-sm.jpg" alt="Веб-сайт" width="450" height="294" />
-                </picture>
-                <p class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
-                  дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                <p class="overlay__paragraph">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="skills">
-                <h2 class="skills__card">
-                  Проєкт <span lang="en">LAB</span>
-                </h2>
-                <p class="skills__group">Маркетинг</p>
-              </div>
-            </a>
+            </div>
+            <div class="portfolio__box">
+              <h3 class="portfolio-box__name">Проект LAB</h3>
+              <p class="portfolio-box__paragraph">Маркетинг</p>
+            </div>
           </li>
-          <li class="card__list">
-            <a class="card__box" href="">
+          <li class="portfolio__images">
+            <div class="portfolio__overlay">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/bussines@1.webp 1x,
+                                    ./images/bussines@2.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)" srcset="./images/bussines@1tab.webp 1x,
+                                    ./images/bussines@2tab.webp 2x" type="image/webp" />
+                <source media="(max-width: 767px)" srcset="./images/bussines@1mob.webp 1x, 
+                                    ./images/bussines@2mob.webp 2x" type="image/webp" />
+
+
+                <source media="(min-width: 1200px)" srcset="./images/bussines@1.jpg 1x,
+                                    ./images/bussines@2.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/bussines@1tab.jpg 1x,
+                                    ./images/bussines@2tab.jpg 2x" />
+                <source media="(max-width: 767px)" srcset="./images/bussines@1mob.jpg 1x, 
+                                    ./images/bussines@2mob.jpg 2x" />
+                <img src="./images/bussines.jpg" class="portfolio__img" alt="Растущий бизнес">
+              </picture>
               <div class="overlay">
-                <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./img/portfolio/9-lg.jpg 1x, ./img/portfolio/9-lg@2x.jpg 2x" type="image/jpg" />
-                  <source media="(min-width: 768px)"
-                    srcset="./img/portfolio/9-md.jpg 1x, ./img/portfolio/9-md@2x.jpg 2x" type="image/jpg" />
-                  <source media="(max-width: 767px)"
-                    srcset="./img/portfolio/9-sm.jpg 1x, ./img/portfolio/9-sm@2x.jpg 2x" type="image/jpg" />
-                  <img src="./img/portfolio/9-sm.jpg" alt="Веб-сайт" width="450" height="294" />
-                </picture>
-                <p class="overlay__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
-                  дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                <p class="overlay__paragraph">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                  сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="skills">
-                <h2 class="skills__card" lang="en">Growing Business</h2>
-                <p class="skills__group">Додаток</p>
-              </div>
-            </a>
+            </div>
+            <div class="portfolio__box">
+              <h3 class="portfolio-box__name">Growing Business</h3>
+              <p class="portfolio-box__paragraph">Додаток</p>
+            </div>
           </li>
         </ul>
       </div>
     </section>
   </main>
-
-  <!-- Секція футер -->
-  <footer class="footer">
-    <div class="container container__footer">
-      <div class="container__footer-logo">
-        <a href="./index.html" class="logo-link link">
-          Web<span class="logo__footer">Studio</span></a>
-        <address class="contact">
-          <ul class="footer__link">
-            <li class="item">
-              <a href="https://goo.gl/maps/J9fnGw7j8aF3vUGx8" target="_blank" rel="noopener noreferrer"
-                class="contact__list">м. Київ, пр-т Лесі Українки, 26</a>
-            </li>
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a>
-            </li>
-            <li class="item">
-              <a href="tel:+380991111111" class="contact">+38 099 111 11 11</a>
-            </li>
-          </ul>
-        </address>
-      </div>
-      <div class="footer__join">
-        <strong class="join">Приєднуйтесь</strong>
-        <ul class="footer__list">
-          <li class="icon__item">
-            <a class="icon__item-footer" href=""><svg class="footer__icons" width="20" height="20">
-                <use href="./img/icons.svg#icon-instagram-footer"></use>
-              </svg></a>
+  <footer class="footer section">
+    <div class="container footer__box">
+      <div class="footer__adress">
+        <a href="./index.html" class="footer__logo">Web<span class="word-logo">Studio</span></a>
+        <address class="footer__street">м. Київ, пр-т Лесі Українки, 26</address>
+        <ul>
+          <li class="footer__list">
+            <a href="mailto:info@example.com" class="footer__contacts">info@example.com</a>
           </li>
-          <li class="icon__item">
-            <a class="icon__item-footer" href=""><svg class="footer__icons" width="20" height="20">
-                <use href="./img/icons.svg#icon-twitter-footer"></use>
-              </svg></a>
-          </li>
-          <li class="icon__item">
-            <a class="icon__item-footer" href=""><svg class="footer__icons" width="20" height="20">
-                <use href="./img/icons.svg#icon-facebook-footer"></use>
-              </svg></a>
-          </li>
-          <li class="icon__item">
-            <a class="icon__item-footer" href=""><svg class="footer__icons" width="20" height="20">
-                <use href="./img/icons.svg#icon-linkedin-footer"></use>
-              </svg></a>
+          <li class="footer__list">
+            <a href="tel:+380991111111" class="footer__contacts">+38 099 111 11 11</a>
           </li>
         </ul>
       </div>
-
-      <div class="footer__join-form">
-        <strong class="join">Підпишіться на розсилку</strong>
-        <form class="form__sign">
-          <label for="user_email"></label>
-          <input class="form__sign-input" type="email" name="email" placeholder="E-mail" id="user_email" />
-          <button type="submit" class="footer__button">
-            Підписатися<svg class="footer__icons-join" width="24" height="24">
-              <use href="./img/icons.svg#icon-send"></use>
+      <div class="footer__social">
+        <h2 class="footer-social__title">приєднуйтесь</h2>
+        <ul class="footer-social__list">
+          <li class="social-list__item">
+            <a class="footer__link" href="#" aria-label="Страница в инстаграмме">
+              <svg class="social-list__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="footer__link" href="#" aria-label="Страница в твиттере">
+              <svg class="social-list__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="footer__link" href="#" aria-label="Страница в фейсбуке">
+              <svg class="social-list__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="footer__link" href="#" aria-label="Страница в линкедине">
+              <svg class="social-list__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="send">Підпишіться на розсилку</h2>
+        <form class="send__form">
+          <input class="send__input" type="email" name="mail" placeholder="E-mail" />
+          <button class="send__button" type="submit">
+            Підписатися
+            <svg class="send__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-subscribe"></use>
             </svg>
           </button>
         </form>
       </div>
     </div>
   </footer>
-  <script src="./Js/modal.js"></script>
-  <script src="./Js/mobile-menu.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./Js/mobile-menu.js"></script>
 </body>
 
 </html>
