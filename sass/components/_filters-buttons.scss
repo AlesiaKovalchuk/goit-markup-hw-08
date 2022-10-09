@@ -1,5 +1,6 @@
 .portfolio__list {
     display: flex;
+    gap: 15px 8px;
 
     @media screen and (max-width: 767px) {
         margin-bottom: 40px;
