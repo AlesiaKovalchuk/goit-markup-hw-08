@@ -452,10 +452,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 170px;
+    -ms-flex-preferred-size: calc((100% - 180px) / 6);
+        flex-basis: calc((100% - 180px) / 6);
     margin-right: 30px;
   }
   .clients__item:last-child {
