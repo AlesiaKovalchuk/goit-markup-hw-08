@@ -980,14 +980,6 @@ header {
   .nav-contacts__icon {
     margin-right: 8px;
   }
-  .nav-contacts__icon:first-child {
-    width: 14px;
-    height: 10px;
-  }
-  .nav-contacts__icon:last-child {
-    width: 10px;
-    height: 14px;
-  }
 }
 
 @media screen and (max-width: 1199px) {
