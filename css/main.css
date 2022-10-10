@@ -1885,6 +1885,11 @@ header {
   }
 }
 
+.nav-contacts__link phone {
+  font-size: 34px;
+  color: var(--color-second);
+}
+
 .modal-links__list {
   display: -webkit-box;
   display: -ms-flexbox;
