@@ -159,7 +159,11 @@ body {
     color: var(--color-contacts);
 }
 
-
+//.hero.section,
+.footer,
+.send__input {
+    background-color: var (--color-hero);
+}
 
 .hero__title,
 .work__text,

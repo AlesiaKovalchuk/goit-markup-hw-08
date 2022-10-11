@@ -133,6 +133,11 @@ body {
   color: var(--color-contacts);
 }
 
+.footer,
+.send__input {
+  background-color: var --color-hero;
+}
+
 .hero__title,
 .work__text,
 .footer,
