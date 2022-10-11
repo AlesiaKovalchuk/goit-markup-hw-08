@@ -96,3 +96,16 @@
        
     }
 }
+
+.phone {
+    @media screen and (max-width: 767px) {  
+        color: var(--color-second);
+        font-size: 34px;
+    }
+}
+
+.mail {
+    @media screen and (max-width:767px) {
+        font-size: 24px;
+    }
+}

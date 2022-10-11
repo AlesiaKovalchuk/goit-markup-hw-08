@@ -977,6 +977,19 @@ header {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .phone {
+    color: var(--color-second);
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mail {
+    font-size: 24px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .section.quality {
     padding-top: 60px;
@@ -2097,28 +2110,5 @@ header {
     font-size: 40px;
     line-height: 1.172;
     letter-spacing: 0.02em;
-  }
-}
-@media screen and (max-width: 480px) {
-  .mail {
-    color: var(--color-contacts);
-    font-size: 34px;
-  }
-}
-@media screen and (max-width: 414px) {
-  .mail {
-    font-size: 23px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .phone {
-    color: var(--color-second);
-    font-size: 34px;
-  }
-}
-@media screen and (max-width: 414px) {
-  .phone {
-    font-size: 23px;
   }
 }/*# sourceMappingURL=main.css.map */
