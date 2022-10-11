@@ -1111,6 +1111,11 @@ header {
   }
 }
 
+.team__title {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
 @media screen and (max-width: 1199px) {
   .team__title {
     margin-bottom: 30px;
